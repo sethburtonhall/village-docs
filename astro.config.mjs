@@ -2,9 +2,13 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightImageZoom from "starlight-image-zoom";
+import { passthroughImageService } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  image: {
+    service: passthroughImageService(),
+  },
   integrations: [
     starlight({
       plugins: [starlightImageZoom()],
