@@ -1,0 +1,110 @@
+---
+title: Sign-Up Form Builder
+description: Learn how to build custom sign-up forms to collect exactly the information you need from attendees.
+---
+
+Every event in Village includes a custom sign-up form. The **Form Builder** lets you add, arrange, and configure the fields that attendees fill out when they register for your event.
+
+You'll find the Form Builder at the bottom of the event creation and editing pages.
+
+---
+
+## Adding a field
+
+Click the **Add Field** button (or the **+** icon) to add a new field to your form. A menu appears with all available field types — click one to add it to the bottom of your form.
+
+---
+
+## Field types
+
+### Text field
+
+A single-line text input. Best for short answers like a name, phone number, organization, or any other brief response.
+
+**Configuration options:**
+- **Label** — the field name shown to the attendee (e.g. "First Name")
+- **Placeholder** — hint text shown inside the field before they type (e.g. "Jane")
+- **Required** — if checked, the attendee cannot submit the form without filling in this field
+
+---
+
+### Textarea
+
+A multi-line text input. Best for longer responses like dietary restrictions, special notes, questions for the organizer, or any open-ended answer.
+
+**Configuration options:**
+- **Label**
+- **Placeholder**
+- **Required**
+
+---
+
+### Dropdown (Select)
+
+A dropdown menu with a list of predefined choices. Best for questions where the attendee must choose one option from a fixed list — like a t-shirt size, meal preference, or session track.
+
+**Configuration options:**
+- **Label**
+- **Placeholder** — shown when no option is selected
+- **Options** — add as many choices as you need; each option is a separate line
+- **Required**
+
+---
+
+### Date picker
+
+A date selection field. Use this when you need a specific date from the attendee, such as a preferred session date, date of birth, or availability date.
+
+**Configuration options:**
+- **Label**
+- **Required**
+
+---
+
+### Paragraph
+
+A block of read-only text, not a fillable field. Use a paragraph to add instructions, section headings, or any contextual information between your form fields.
+
+**Configuration options:**
+- **Content** — the text to display, with optional bold and italic formatting
+
+---
+
+## Reordering fields
+
+Drag and drop any field using its handle (the grip icon on the left side) to reorder it within the form. The order you set here is the order attendees will see.
+
+---
+
+## Editing a field
+
+Click the **Edit** (pencil) icon on any field to open its settings and change the label, placeholder, options, or required setting.
+
+---
+
+## Deleting a field
+
+Click the **Delete** (trash) icon on any field to remove it from the form. Existing sign-ups are not affected — their already-submitted responses are preserved.
+
+---
+
+## Editing forms on published events
+
+You can add, edit, reorder, or remove form fields at any time — even after an event is published and has existing sign-ups. Changes to the form only affect new sign-ups going forward. Existing submissions are saved as-is.
+
+---
+
+## Tips for building effective forms
+
+- **Keep it short.** Only ask for what you actually need. Longer forms lead to fewer completions.
+- **Mark required fields thoughtfully.** Make a field required only if you truly cannot proceed without it.
+- **Use placeholders as examples.** A placeholder like "e.g. Jane Smith" helps attendees understand the expected format.
+- **Use paragraphs for clarity.** If you have a long form, use a Paragraph field as a section divider to make it easier to read.
+- **Test it yourself.** After publishing, open your event's public link in a new browser tab and try submitting the form to confirm everything looks and works as expected.
+
+---
+
+## Next steps
+
+- [Publishing & Sharing](/publishing-sharing) — go live and get your sign-up link
+- [Managing Sign-Ups](/managing-signups) — see and manage the responses you collect
