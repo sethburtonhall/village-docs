@@ -48,7 +48,7 @@ When someone opens your event's public link, they see:
 - The full **description** with all of your rich text formatting
 - The **number of remaining slots** (if the event has a slot limit)
 - Your **sign-up form**
-- Your **organization name and logo** *(Organization plan only)*
+- Your **organization name and logo** _(Organization plan only)_
 
 Attendees do not need a Village account to sign up. They simply fill out the form and submit.
 
@@ -56,7 +56,7 @@ Attendees do not need a Village account to sign up. They simply fill out the for
 
 ## Slot availability
 
-The public page shows a live count of remaining slots. As people register, the count decreases in real time.
+The public page shows a live count of remaining slots. As people sign up, the count decreases in real time.
 
 When **all slots are filled**, the sign-up form is automatically replaced with an "event is full" message. No action is needed on your part.
 
@@ -68,10 +68,10 @@ If someone cancels or you remove a participant, their slot is immediately return
 
 You can change your event's status at any time. Status options are:
 
-| Status | What it means |
-|---|---|
-| **In Progress** | Your event is active and accepting sign-ups |
-| **Canceled** | The event is canceled — the card is visually de-emphasized |
+| Status          | What it means                                              |
+| --------------- | ---------------------------------------------------------- |
+| **In Progress** | Your event is active and accepting sign-ups                |
+| **Canceled**    | The event is canceled — the card is visually de-emphasized |
 
 Events that have passed their date are automatically displayed as **Completed** in your dashboard with a grayed-out appearance. No action is required.
 
@@ -81,9 +81,9 @@ To change the status, open the event's edit page and use the **Event Status** se
 
 ## Editing a published event
 
-You can edit any event detail at any time after publishing — title, description, date, slot count, form fields, and more. 
+You can edit any event detail at any time after publishing — title, description, date, slot count, form fields, and more.
 
-> **Important:** When you save changes to a published event, Village automatically sends an **event update email** to all existing sign-ups. Make sure your changes are intentional before saving, as this will notify everyone who has already registered. See [Email Notifications](/email-notifications) for details on what that email contains.
+> **Important:** When you save changes to a published event, Village automatically sends an **event update email** to all existing sign-ups. Make sure your changes are intentional before saving, as this will notify everyone who has already signed up. See [Email Notifications](/email-notifications) for details on what that email contains.
 
 ---
 
@@ -111,5 +111,5 @@ Click the **star icon** on any event card to favorite it. Favorited events appea
 
 ## Next steps
 
-- [Managing Sign-Ups](/managing-signups) — view and manage everyone who registers
+- [Managing Sign-Ups](/managing-signups) — view and manage everyone who signs up
 - [Email Notifications](/email-notifications) — understand what emails Village sends automatically

@@ -3,7 +3,7 @@ title: Managing Sign-Ups
 description: View, manage, and export the sign-ups for your events.
 ---
 
-When attendees register for your event, their sign-ups appear in the sign-up table on your event's detail page. Village updates this table in real time — you don't need to refresh the page to see new registrations.
+When attendees sign up for your event, their sign-ups appear in the sign-up table on your event's detail page. Village updates this table in real time — you don't need to refresh the page to see new registrations.
 
 ---
 
@@ -18,7 +18,8 @@ To see sign-ups for a specific event:
 The sign-up table displays one row per attendee. The columns are generated dynamically based on the fields in your sign-up form — each form field becomes its own column. Common fields like First Name, Last Name, and Email are sorted to appear first.
 
 Each row also shows:
-- **Signed Up** — the date and time the attendee registered
+
+- **Signed Up** — the date and time the attendee signed up.
 
 If no one has signed up yet, the section shows an empty state with a message indicating sign-ups will appear here when people register.
 
@@ -40,6 +41,7 @@ To remove an attendee from an event:
 4. A confirmation dialog appears
 
 In the dialog, you can:
+
 - Choose whether to **notify the attendee by email** (checked by default)
 - Add an optional **personal note** to include in the notification email (e.g. "Sorry for the inconvenience — please reach out if you have questions.")
 
@@ -60,7 +62,7 @@ When they cancel, their slot is immediately returned to the event. You don't nee
 
 ---
 
-## Exporting sign-ups to CSV *(Organization plan only)*
+## Exporting sign-ups to CSV _(Organization plan only)_
 
 Organization plan users can download all sign-ups for an event as a CSV file.
 
@@ -72,7 +74,7 @@ The downloaded file includes all form response columns plus the sign-up timestam
 
 ---
 
-## Dashboard sign-up activity *(Organization plan only)*
+## Dashboard sign-up activity _(Organization plan only)_
 
 Organization plan users also see sign-up activity on their dashboard:
 

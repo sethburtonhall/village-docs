@@ -3,7 +3,7 @@ title: Sign-Up Form Builder
 description: Learn how to build custom sign-up forms to collect exactly the information you need from attendees.
 ---
 
-Every event in Village includes a custom sign-up form. The **Form Builder** lets you add, arrange, and configure the fields that attendees fill out when they register for your event.
+Every event in Village includes a custom sign-up form. The **Form Builder** lets you add, arrange, and configure the fields that attendees fill out when they sign up for your event.
 
 You'll find the Form Builder at the bottom of the event creation and editing pages.
 
@@ -22,6 +22,7 @@ Click the **Add Field** button (or the **+** icon) to add a new field to your fo
 A single-line text input. Best for short answers like a name, phone number, organization, or any other brief response.
 
 **Configuration options:**
+
 - **Label** — the field name shown to the attendee (e.g. "First Name")
 - **Placeholder** — hint text shown inside the field before they type (e.g. "Jane")
 - **Required** — if checked, the attendee cannot submit the form without filling in this field
@@ -33,6 +34,7 @@ A single-line text input. Best for short answers like a name, phone number, orga
 A multi-line text input. Best for longer responses like dietary restrictions, special notes, questions for the organizer, or any open-ended answer.
 
 **Configuration options:**
+
 - **Label**
 - **Placeholder**
 - **Required**
@@ -44,6 +46,7 @@ A multi-line text input. Best for longer responses like dietary restrictions, sp
 A dropdown menu with a list of predefined choices. Best for questions where the attendee must choose one option from a fixed list — like a t-shirt size, meal preference, or session track.
 
 **Configuration options:**
+
 - **Label**
 - **Placeholder** — shown when no option is selected
 - **Options** — add as many choices as you need; each option is a separate line
@@ -56,6 +59,7 @@ A dropdown menu with a list of predefined choices. Best for questions where the 
 A date selection field. Use this when you need a specific date from the attendee, such as a preferred session date, date of birth, or availability date.
 
 **Configuration options:**
+
 - **Label**
 - **Required**
 
@@ -66,6 +70,7 @@ A date selection field. Use this when you need a specific date from the attendee
 A block of read-only text, not a fillable field. Use a paragraph to add instructions, section headings, or any contextual information between your form fields.
 
 **Configuration options:**
+
 - **Content** — the text to display, with optional bold and italic formatting
 
 ---
