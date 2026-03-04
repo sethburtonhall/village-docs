@@ -1,10 +1,11 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import starlightImageZoom from "starlight-image-zoom";
 // validates all links in Vercel builds, skips local
 // https://starlight-links-validator.vercel.app/guides/conditional-validation
 import starlightLinksValidator from "starlight-links-validator";
+import starlightImageZoom from "starlight-image-zoom";
+import starlightHeadingBadges from "starlight-heading-badges";
 import { passthroughImageService } from "astro/config";
 
 // https://astro.build/config
@@ -17,6 +18,7 @@ export default defineConfig({
       title: "Village Docs",
       plugins: [
         starlightImageZoom(),
+        starlightHeadingBadges(),
         ...(process.env.CHECK_LINKS ? [starlightLinksValidator()] : []),
       ],
       // Disable the default 404 page so we can use our custom one
@@ -42,7 +44,10 @@ export default defineConfig({
         {
           label: "Start Here",
           items: [
-            { label: "Introduction", slug: "start-here/introduction" },
+            {
+              label: "Introduction",
+              slug: "start-here/introduction",
+            },
             { label: "Private Beta Program", slug: "start-here/private-beta" },
             { label: "Getting Started", slug: "start-here/getting-started" },
             { label: "Your Account & Plan", slug: "start-here/account-plans" },
@@ -66,7 +71,11 @@ export default defineConfig({
               label: "Email Notifications",
               slug: "guides/email-notifications",
             },
-            { label: "Feedback & Support", slug: "guides/feedback-support" },
+            {
+              label: "Feedback & Support",
+              slug: "guides/feedback-support",
+              badge: { text: "New", variant: "success" },
+            },
             // { label: "What's Coming", slug: "guides/whats-coming" },
           ],
         },
