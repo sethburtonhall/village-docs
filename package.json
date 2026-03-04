@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.37.6",
     "@fontsource/nunito": "^5.2.7",
     "astro": "^5.18.0",
-    "starlight-image-zoom": "^0.13.2"
+    "starlight-image-zoom": "^0.13.2",
+    "starlight-links-validator": "^0.19.2"
   }
 }

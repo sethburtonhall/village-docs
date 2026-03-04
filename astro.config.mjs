@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightImageZoom from "starlight-image-zoom";
+import starlightLinksValidator from "starlight-links-validator";
 import { passthroughImageService } from "astro/config";
 
 // https://astro.build/config
@@ -11,7 +12,10 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      plugins: [starlightImageZoom()],
+      plugins: [
+        starlightImageZoom(),
+        ...(process.env.CHECK_LINKS ? [starlightLinksValidator()] : []),
+      ],
       title: "Village Docs",
       components: {
         LastUpdated: "./src/components/CustomLastUpdated.astro",
