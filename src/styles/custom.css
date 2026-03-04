@@ -22,12 +22,6 @@
   }
 }
 
-/* More specific selector for primary buttons */
-.sl-link-button.primary {
-  border-color: transparent;
-  color: var(--sl-color-white) !important;
-}
-
 .meta {
   justify-content: flex-end;
 }
