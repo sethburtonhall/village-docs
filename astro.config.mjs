@@ -2,6 +2,8 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightImageZoom from "starlight-image-zoom";
+// validates all links in Vercel builds, skips local
+// https://starlight-links-validator.vercel.app/guides/conditional-validation
 import starlightLinksValidator from "starlight-links-validator";
 import { passthroughImageService } from "astro/config";
 
@@ -17,6 +19,7 @@ export default defineConfig({
         starlightImageZoom(),
         ...(process.env.CHECK_LINKS ? [starlightLinksValidator()] : []),
       ],
+      // Disable the default 404 page so we can use our custom one
       disable404Route: true,
       components: {
         LastUpdated: "./src/components/CustomLastUpdated.astro",
