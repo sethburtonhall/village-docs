@@ -1,12 +1,31 @@
 :root {
-  --sl-font-system:
-    ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --sl-font-system-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --__sl-font: var(--sl-font, var(--sl-font-system)), var(--sl-font-system);
-  --__sl-font-mono:
-    var(--sl-font-mono, var(--sl-font-system-mono)), var(--sl-font-system-mono);
+  --sl-font: "Nunito", sans-serif;
+}
+
+.site-title {
+  gap: 0.7rem;
+  font-size: var(--sl-text-h3);
+  font-weight: 700;
+  color: var(--sl-color-white);
+}
+
+@media (min-width: 50rem) {
+  .hero {
+    grid-template-columns: 7fr 4fr;
+  }
+  .hero > img,
+  .hero > .hero-html {
+    order: 2;
+    width: min(70%, 25rem);
+  }
+}
+
+.sl-link-button.primary {
+  background: #16a34a;
+  border-color: transparent;
+  color: var(--sl-color-white);
+}
+
+.meta {
+  justify-content: flex-end;
 }

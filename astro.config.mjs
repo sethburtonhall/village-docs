@@ -7,7 +7,16 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Village Docs",
-      customCss: ["./src/styles/custom.css"],
+      components: {
+        LastUpdated: "./src/components/CustomLastUpdated.astro",
+      },
+      customCss: [
+        "./src/styles/custom.css",
+        "@fontsource/nunito/400.css",
+        "@fontsource/nunito/600.css",
+        "@fontsource/nunito/700.css",
+        "@fontsource/nunito/900.css",
+      ],
       // social: {
       //   github: "https://github.com/withastro/starlight",
       // },
