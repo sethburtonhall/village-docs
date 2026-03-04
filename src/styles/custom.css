@@ -1,5 +1,7 @@
 :root {
   --sl-font: "Nunito", sans-serif;
+  --brand-color: #16a34a;
+  --sl-color-text-accent: var(--brand-color);
 }
 
 .site-title {
@@ -20,10 +22,10 @@
   }
 }
 
-.sl-link-button:where(.astro-xwgiixxa).primary {
-  background: #16a34a;
+/* More specific selector for primary buttons */
+.sl-link-button.primary {
   border-color: transparent;
-  color: var(--sl-color-white);
+  color: var(--sl-color-white) !important;
 }
 
 .meta {
