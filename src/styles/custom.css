@@ -20,7 +20,7 @@
   }
 }
 
-.sl-link-button.primary {
+.sl-link-button:where(.astro-xwgiixxa).primary {
   background: #16a34a;
   border-color: transparent;
   color: var(--sl-color-white);
