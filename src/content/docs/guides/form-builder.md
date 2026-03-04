@@ -111,5 +111,5 @@ You can add, edit, reorder, or remove form fields at any time — even after an 
 
 ## Next steps
 
-- [Publishing & Sharing](/publishing-sharing) — go live and get your sign-up link
-- [Managing Sign-Ups](/managing-signups) — see and manage the responses you collect
+- [Publishing & Sharing](/guides/publishing-sharing) — go live and get your sign-up link
+- [Managing Sign-Ups](/guides/managing-signups) — see and manage the responses you collect

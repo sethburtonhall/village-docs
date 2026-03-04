@@ -11,16 +11,16 @@ To create a new event, click the **Create Event** button in the top navigation b
 
 The first field is **Event Type**. This categorizes your event and helps attendees understand the context at a glance. Choose the type that best fits your event:
 
-| Type | Best for |
-|---|---|
-| **Nonprofit** | Fundraisers, community drives, charity events |
-| **School** | Class activities, parent meetings, school events |
-| **Volunteer** | Volunteer shifts, service days, work parties |
-| **Team** | Sports teams, leagues, team practices |
-| **Church** | Worship events, ministry gatherings, church outings |
-| **Neighborhood** | Block parties, HOA meetings, local meetups |
-| **Office** | Work events, team lunches, company gatherings |
-| **Pot Luck** | Shared meals, potluck dinners, covered-dish events |
+| Type             | Best for                                            |
+| ---------------- | --------------------------------------------------- |
+| **Nonprofit**    | Fundraisers, community drives, charity events       |
+| **School**       | Class activities, parent meetings, school events    |
+| **Volunteer**    | Volunteer shifts, service days, work parties        |
+| **Team**         | Sports teams, leagues, team practices               |
+| **Church**       | Worship events, ministry gatherings, church outings |
+| **Neighborhood** | Block parties, HOA meetings, local meetups          |
+| **Office**       | Work events, team lunches, company gatherings       |
+| **Pot Luck**     | Shared meals, potluck dinners, covered-dish events  |
 
 ---
 
@@ -58,7 +58,7 @@ Write a **one or two sentence teaser** for your event. This is shown on event ca
 
 The **description** is the full body of your event page. The editor supports:
 
-- **Bold**, *italic*, and underlined text
+- **Bold**, _italic_, and underlined text
 - Hyperlinks
 - Numbered lists and bullet lists
 - Headings and paragraphs
@@ -81,13 +81,13 @@ Set how many spots are available for your event. This is the maximum number of p
 
 - When all slots are filled, the sign-up form closes automatically and shows an "event is full" message to any new visitors
 - Each time someone cancels or is removed, their slot is returned to the available count
-- Your plan determines the maximum number of slots you can set per event (see [Account & Plans](/account-plans))
+- Your plan determines the maximum number of slots you can set per event (see [Account & Plans](/start-here/account-plans))
 
 ---
 
 ## Sign-up form
 
-Below the slot count is the **Sign-Up Form Builder**, where you define what information you collect from attendees. See [Sign-Up Form Builder](/form-builder) for a full walkthrough.
+Below the slot count is the **Sign-Up Form Builder**, where you define what information you collect from attendees. See [Sign-Up Form Builder](/guides/form-builder) for a full walkthrough.
 
 ---
 
@@ -126,11 +126,11 @@ If you're on the **Free plan**, you can have up to **3 published events** at a t
 
 - You can still **save new events as drafts**
 - You can **delete or cancel** an existing event to free up a slot
-- You can [upgrade your plan](/account-plans) to publish unlimited events
+- You can [upgrade your plan](/start-here/account-plans) to publish unlimited events
 
 ---
 
 ## Next steps
 
-- [Sign-Up Form Builder](/form-builder) — set up the form attendees fill out
-- [Publishing & Sharing](/publishing-sharing) — get your shareable link and go live
+- [Sign-Up Form Builder](/guides/form-builder) — set up the form attendees fill out
+- [Publishing & Sharing](/guides/publishing-sharing) — get your shareable link and go live

@@ -111,5 +111,5 @@ Profile details like your display name and profile photo are managed through the
 
 ## Next steps
 
-- [Feedback & Support](/feedback-support) — get help or send feedback to the Village team
-- [Creating Events](/creating-events) — start creating events on your current plan
+- [Feedback & Support](/guides/feedback-support) — get help or send feedback to the Village team
+- [Creating Events](/guides/creating-events) — start creating events on your current plan

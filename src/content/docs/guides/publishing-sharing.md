@@ -83,7 +83,7 @@ To change the status, open the event's edit page and use the **Event Status** se
 
 You can edit any event detail at any time after publishing — title, description, date, slot count, form fields, and more.
 
-> **Important:** When you save changes to a published event, Village automatically sends an **event update email** to all existing sign-ups. Make sure your changes are intentional before saving, as this will notify everyone who has already signed up. See [Email Notifications](/email-notifications) for details on what that email contains.
+> **Important:** When you save changes to a published event, Village automatically sends an **event update email** to all existing sign-ups. Make sure your changes are intentional before saving, as this will notify everyone who has already signed up. See [Email Notifications](/guides/email-notifications) for details on what that email contains.
 
 ---
 
@@ -111,5 +111,5 @@ Click the **star icon** on any event card to favorite it. Favorited events appea
 
 ## Next steps
 
-- [Managing Sign-Ups](/managing-signups) — view and manage everyone who signs up
-- [Email Notifications](/email-notifications) — understand what emails Village sends automatically
+- [Managing Sign-Ups](/guides/managing-signups) — view and manage everyone who signs up
+- [Email Notifications](/guides/email-notifications) — understand what emails Village sends automatically

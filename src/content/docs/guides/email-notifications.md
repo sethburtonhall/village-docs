@@ -94,11 +94,11 @@ Ask them to check their spam folder. If they still can't find it, you can locate
 Not yet. Direct messaging to attendees is a feature planned for a future update. For now, editing the event description and saving will send an update notification to everyone who has signed up.
 
 **Do attendees get notified when I remove them?**
-Yes, if you choose to notify them. When you remove a sign-up from your end, you have the option to send (or skip) a notification email, and optionally include a personal note explaining the removal. See [Managing Sign-Ups](/managing-signups) for details.
+Yes, if you choose to notify them. When you remove a sign-up from your end, you have the option to send (or skip) a notification email, and optionally include a personal note explaining the removal. See [Managing Sign-Ups](/guides/managing-signups) for details.
 
 ---
 
 ## Next steps
 
-- [Managing Sign-Ups](/managing-signups) — view and manage registrations
-- [Feedback & Support](/feedback-support) — report issues or request features
+- [Managing Sign-Ups](/guides/managing-signups) — view and manage registrations
+- [Feedback & Support](/guides/feedback-support) — report issues or request features

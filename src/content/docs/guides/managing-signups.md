@@ -58,7 +58,7 @@ Attendees can cancel their own spot without contacting you. Every sign-up confir
 - Review the event details and their form responses
 - Click **Cancel my spot** to remove themselves from the event
 
-When they cancel, their slot is immediately returned to the event. You don't need to take any action. See [Email Notifications](/email-notifications) for more details on the confirmation email.
+When they cancel, their slot is immediately returned to the event. You don't need to take any action. See [Email Notifications](/guides/email-notifications) for more details on the confirmation email.
 
 ---
 
@@ -93,5 +93,5 @@ Organization plan users also see sign-up activity on their dashboard:
 
 ## Next steps
 
-- [Email Notifications](/email-notifications) — understand what emails are sent to attendees and when
-- [Account & Plans](/account-plans) — learn about plan limits and the CSV export feature
+- [Email Notifications](/guides/email-notifications) — understand what emails are sent to attendees and when
+- [Account & Plans](/start-here/account-plans) — learn about plan limits and the CSV export feature
