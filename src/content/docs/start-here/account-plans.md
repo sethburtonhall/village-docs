@@ -9,18 +9,18 @@ Village has three plans designed for different needs — from individuals runnin
 
 ## Plan comparison
 
-| Feature | Free | Individual | Organization |
-|---|---|---|---|
-| **Price** | Free | $7 / month | $25 / month |
-| **Total events** | 3 published | Unlimited | Unlimited |
-| **Slots per event** | Up to 15 | Up to 50 | Unlimited |
-| **Email notifications** | ✓ | ✓ | ✓ |
-| **Color themes** | ✓ | ✓ | ✓ |
-| **Organization branding** | — | — | ✓ |
-| **Export sign-ups (CSV)** | — | — | ✓ |
-| **Dashboard analytics** | — | Coming soon | Coming soon |
-| **SMS notifications** | — | Coming soon | Coming soon |
-| **Support** | Standard | Priority | Priority |
+| Feature                   | Free        | Individual                                            | Organization                                          |
+| ------------------------- | ----------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| **Price**                 | Free        | $7 / month                                            | $25 / month                                           |
+| **Total events**          | 3 published | Unlimited                                             | Unlimited                                             |
+| **Slots per event**       | Up to 15    | Up to 50                                              | Unlimited                                             |
+| **Email notifications**   | ✓           | ✓                                                     | ✓                                                     |
+| **Color themes**          | ✓           | ✓                                                     | ✓                                                     |
+| **Organization branding** | —           | —                                                     | ✓                                                     |
+| **Export sign-ups (CSV)** | —           | —                                                     | ✓                                                     |
+| **Dashboard analytics**   | —           | <Badge text="Coming Soon" variant="caution" />        | <Badge text="Coming Soon" variant="caution" />        |
+| **SMS notifications**     | —           | <Badge text="Coming Soon" variant="caution" />        | <Badge text="Coming Soon" variant="caution" />        |
+| **Support**               | Standard    | <Badge text="Beta Benefit" variant="note" /> Priority | <Badge text="Beta Benefit" variant="note" /> Priority |
 
 ---
 
@@ -29,8 +29,9 @@ Village has three plans designed for different needs — from individuals runnin
 The Free plan is a great way to get started with Village at no cost.
 
 **Limits to be aware of:**
-- You can have **up to 3 published events** at one time. Once you reach that limit, you can save new events as drafts and publish them when you free up a slot (by deleting or canceling an existing event), or upgrade to Individual.
-- Each event can have **up to 15 slots**. If you need more attendees per event, upgrading to Individual raises that limit to 50.
+
+- You can have **up to 3 published events** at one time. Once you reach that limit, you can save new events as drafts and publish them when you free up a slot (by deleting or canceling an existing event), or upgrade.
+- Each event can have **up to 15 slots**. If you need more attendees per event, upgrading to raises that limit.
 
 ---
 
@@ -39,9 +40,10 @@ The Free plan is a great way to get started with Village at no cost.
 The Individual plan is designed for people who run events regularly and need more room to grow.
 
 **What you get:**
+
 - **Unlimited published events** — no cap on how many events you can have live at once
 - **Up to 50 slots per event** — accommodate larger groups
-- **Priority support** — faster response time when you need help
+- **Priority support** — faster response time when you need help <Badge text="Beta Benefit" variant="note" />
 
 ---
 
@@ -50,10 +52,22 @@ The Individual plan is designed for people who run events regularly and need mor
 The Organization plan is built for groups, nonprofits, teams, and organizations that run events as an ongoing part of their operations.
 
 **What you get beyond Individual:**
+
 - **Unlimited slots per event** — no cap on attendee count
 - **Organization branding** — add your logo and organization name; they appear on every public event page you create
 - **Export sign-ups to CSV** — download attendee data for any event to use in spreadsheets or other tools
 - **Dashboard analytics widgets** — see recent sign-up activity and your top events at a glance on the dashboard
+
+---
+
+## Private Beta Discount <Badge text="Beta Exclusive" variant="success" />
+
+As a private beta user, you'll receive **50% off any paid plan for 6 months** when Village officially launches:
+
+- **Individual plan**: $3.50/month (normally $7/month)
+- **Organization plan**: $12.50/month (normally $25/month)
+
+This discount will be automatically applied to your account when we transition out of beta. [Learn more about beta benefits](/start-here/private-beta).
 
 ---
 
@@ -65,7 +79,7 @@ You can also upgrade from within the app by clicking **Account** in the sidebar.
 
 ---
 
-## Organization branding *(Organization plan only)*
+## Organization branding _(Organization plan only)_
 
 Organization plan users can set a custom logo and organization name that appear on every public event sign-up page.
 

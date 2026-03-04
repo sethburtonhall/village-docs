@@ -1,11 +1,13 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
+      plugins: [starlightImageZoom()],
       title: "Village Docs",
       components: {
         LastUpdated: "./src/components/CustomLastUpdated.astro",
@@ -29,6 +31,7 @@ export default defineConfig({
           label: "Start Here",
           items: [
             { label: "Introduction", slug: "start-here/introduction" },
+            { label: "Private Beta Program", slug: "start-here/private-beta" },
             { label: "Getting Started", slug: "start-here/getting-started" },
             { label: "Your Account & Plan", slug: "start-here/account-plans" },
           ],

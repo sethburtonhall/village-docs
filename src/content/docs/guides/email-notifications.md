@@ -78,7 +78,7 @@ Your only responsibility is keeping your event details accurate, since edits tri
 
 ## Email sending
 
-All emails are sent by Village on your behalf from a Village email address. During the beta, the email sender and template styling are managed by Village.
+All emails are sent by Village on your behalf from a Village email address. During the private beta, the email sender and template styling are managed by Village.
 
 ---
 
