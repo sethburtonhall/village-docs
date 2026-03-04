@@ -12,11 +12,12 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      title: "Village Docs",
       plugins: [
         starlightImageZoom(),
         ...(process.env.CHECK_LINKS ? [starlightLinksValidator()] : []),
       ],
-      title: "Village Docs",
+      disable404Route: true,
       components: {
         LastUpdated: "./src/components/CustomLastUpdated.astro",
       },
