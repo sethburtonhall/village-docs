@@ -95,10 +95,3 @@ Not yet. Direct messaging to attendees is a feature planned for a future update.
 
 **Do attendees get notified when I remove them?**
 Yes, if you choose to notify them. When you remove a sign-up from your end, you have the option to send (or skip) a notification email, and optionally include a personal note explaining the removal. See [Managing Sign-Ups](/guides/managing-signups) for details.
-
----
-
-## Next steps
-
-- [Managing Sign-Ups](/guides/managing-signups) — view and manage registrations
-- [Feedback & Support](/guides/feedback-support) — report issues or request features

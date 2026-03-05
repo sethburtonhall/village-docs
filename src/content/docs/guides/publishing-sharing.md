@@ -106,10 +106,3 @@ To permanently delete an event, open the ⋯ actions menu and click **Delete**. 
 ## Marking as a Favorite
 
 Click the **star icon** on any event card to favorite it. Favorited events appear in the **Favorite events** section at the top of your dashboard for quick access. Click the star again to unfavorite.
-
----
-
-## Next steps
-
-- [Managing Sign-Ups](/guides/managing-signups) — view and manage everyone who signs up
-- [Email Notifications](/guides/email-notifications) — understand what emails Village sends automatically

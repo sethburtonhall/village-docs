@@ -48,7 +48,11 @@ export default defineConfig({
               label: "Introduction",
               slug: "start-here/introduction",
             },
-            { label: "Private Beta Program", slug: "start-here/private-beta" },
+            {
+              label: "Private Beta Program",
+              slug: "start-here/private-beta",
+              badge: { text: "Beta", variant: "caution" },
+            },
             { label: "Getting Started", slug: "start-here/getting-started" },
             { label: "Your Account & Plan", slug: "start-here/account-plans" },
           ],
@@ -74,9 +78,7 @@ export default defineConfig({
             {
               label: "Feedback & Support",
               slug: "guides/feedback-support",
-              badge: { text: "New", variant: "success" },
             },
-            // { label: "What's Coming", slug: "guides/whats-coming" },
           ],
         },
       ],
