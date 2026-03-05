@@ -1,18 +1,16 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
 import { Badge } from '@astrojs/starlight/components';
 
-const { lang, lastUpdated } = Astro.props;
+const { lang = "en", lastUpdated } = Astro.locals.starlightRoute;;
 ---
 
-{
-	lastUpdated && (
-		<div class="flex items-center gap-2 mt-4">
-			<Badge 
-				text={`Updated: ${lastUpdated.toLocaleDateString(lang, { dateStyle: 'medium', timeZone: 'UTC' })}`} 
-				size="medium" 
-				style={{ fontStyle: 'italic' }}
-			/>
-		</div>
-	)
-}
+{lastUpdated && (
+	<div class="flex items-center gap-2 mt-4">
+		<Badge 
+			text={`Updated: ${lastUpdated.toLocaleDateString(lang, { dateStyle: 'medium', timeZone: 'UTC' })}`} 
+			size="medium" 
+			style={{ fontStyle: 'italic' }}
+			variant='success'
+		/>
+	</div>
+)}

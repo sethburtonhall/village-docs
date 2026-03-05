@@ -1,0 +1,60 @@
+---
+const colors = [
+  { name: 'Default', bgColor: '#ffffff' },
+  { name: 'Red', bgColor: '#dc2626' },
+  { name: 'Orange', bgColor: '#ea580c' },
+  { name: 'Amber', bgColor: '#d97706' },
+  { name: 'Yellow', bgColor: '#ca8a04' },
+  { name: 'Lime', bgColor: '#65a30d' },
+  { name: 'Green', bgColor: '#16a34a' },
+  { name: 'Emerald', bgColor: '#059669' },
+  { name: 'Teal', bgColor: '#0d9488' },
+  { name: 'Cyan', bgColor: '#0891b2' },
+  { name: 'Sky', bgColor: '#0284c7' },
+  { name: 'Blue', bgColor: '#2563eb' },
+  { name: 'Indigo', bgColor: '#4f46e5' },
+  { name: 'Violet', bgColor: '#7c3aed' },
+  { name: 'Rose', bgColor: '#e11d48' },
+  { name: 'Purple', bgColor: '#9333ea' },
+  { name: 'Fuchsia', bgColor: '#c026d3' },
+  { name: 'Pink', bgColor: '#db2777' },
+];
+---
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .card {
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: var(--sl-content-gap-y);
+  }
+
+  .color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 0 auto 8px;
+    border: 1px solid #d1d5db;
+  }
+
+  .label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+</style>
+
+<div class="grid">
+  {colors.map((color) => (
+    <div class="card">
+      <div class="color-box" style={`background: ${color.bgColor}`}></div>
+      <div class="label">{color.name}</div>
+    </div>
+  ))}
+</div>

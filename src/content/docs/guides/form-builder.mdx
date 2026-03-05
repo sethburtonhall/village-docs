@@ -3,6 +3,8 @@ title: Sign-Up Form Builder
 description: Learn how to build custom sign-up forms to collect exactly the information you need from attendees.
 ---
 
+import { Aside } from "@astrojs/starlight/components";
+
 Every event in Village includes a custom sign-up form. The **Form Builder** lets you add, arrange, and configure the fields that attendees fill out when they sign up for your event.
 
 You'll find the Form Builder at the bottom of the event creation and editing pages.
@@ -77,19 +79,19 @@ A block of read-only text, not a fillable field. Use a paragraph to add instruct
 
 ## Reordering fields
 
-Drag and drop any field using its handle (the grip icon on the left side) to reorder it within the form. The order you set here is the order attendees will see.
+Drag and drop any field to reorder it within the form. The order you set here is the order attendees will see.
 
 ---
 
 ## Editing a field
 
-Click the **Edit** (pencil) icon on any field to open its settings and change the label, placeholder, options, or required setting.
+Click on any field to open its settings and change the label, placeholder, options, or required setting.
 
 ---
 
 ## Deleting a field
 
-Click the **Delete** (trash) icon on any field to remove it from the form. Existing sign-ups are not affected — their already-submitted responses are preserved.
+Click the X icon on any field to remove it from the form. Existing sign-ups are not affected — their already-submitted responses are preserved.
 
 ---
 
@@ -99,10 +101,11 @@ You can add, edit, reorder, or remove form fields at any time — even after an 
 
 ---
 
-## Tips for building effective forms
+<Aside type="tip" title="Tips">
 
 - **Keep it short.** Only ask for what you actually need. Longer forms lead to fewer completions.
 - **Mark required fields thoughtfully.** Make a field required only if you truly cannot proceed without it.
 - **Use placeholders as examples.** A placeholder like "e.g. Jane Smith" helps attendees understand the expected format.
 - **Use paragraphs for clarity.** If you have a long form, use a Paragraph field as a section divider to make it easier to read.
-- **Test it yourself.** After publishing, open your event's public link in a new browser tab and try submitting the form to confirm everything looks and works as expected.
+
+</Aside>

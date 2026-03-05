@@ -3,6 +3,9 @@ title: Creating Events
 description: A step-by-step walkthrough of the event creation form in Village.
 ---
 
+import { Aside } from "@astrojs/starlight/components";
+import ColorSwatchGrid from "@/components/ColorSwatchGrid.astro";
+
 To create a new event, click the **Create Event** button in the top navigation bar or on the Events page. This opens the event editor.
 
 ---
@@ -28,7 +31,7 @@ The first field is **Event Type**. This categorizes your event and helps attende
 
 Choose a **Color Theme** to give your event page a distinct look. The color you pick is applied to your event's public sign-up page and to the event card in your dashboard.
 
-There are 18 color options: Default, Red, Orange, Amber, Yellow, Lime, Green, Emerald, Teal, Cyan, Sky, Blue, Indigo, Violet, Rose, Purple, Fuchsia, and Pink.
+<ColorSwatchGrid />
 
 ---
 
@@ -36,34 +39,38 @@ There are 18 color options: Default, Red, Orange, Amber, Yellow, Lime, Green, Em
 
 Click the **image search field** to search for a cover photo from Unsplash, a free high-quality photo library. Type any keyword and browse the results — click a photo to select it as your event's cover image.
 
-The image appears at the top of your public event page and on the event card in your dashboard.
-
 ---
 
 ## Title
 
-Give your event a clear, descriptive title. This is the first thing attendees will see.
+Give your event a clear, descriptive title. This is one of the first thing attendees will see.
 
 ---
 
 ## Short description
 
-Write a **one or two sentence teaser** for your event. This is shown on event cards in your dashboard and as a preview on the public sign-up page.
+Write a **one or two sentence teaser** for your event. This is shown on event cards in your dashboard.
 
-> **Tip:** Keep it under 125 characters for best results. Village will let you know if you go over.
+<Aside type="tip">
+  Keep it under 125 characters for best results. Village will let you know if
+  you go over.
+</Aside>
 
 ---
 
 ## Description
 
-The **description** is the full body of your event page. The editor supports:
+The **description** is the full body of your event page. The rich text editor supports:
 
 - **Bold**, _italic_, and underlined text
 - Hyperlinks
 - Numbered lists and bullet lists
 - Headings and paragraphs
 
-Write as much detail as attendees need: what to bring, where to meet, what to expect, and so on.
+<Aside type="tip">
+  Write as much detail as attendees need: what to bring, where to meet, what to
+  expect, and so on.
+</Aside>
 
 ---
 
@@ -71,9 +78,9 @@ Write as much detail as attendees need: what to bring, where to meet, what to ex
 
 Select your event's **start date and time** using the date-time picker. You can also set an optional **end time** if your event has a defined duration.
 
-Village stores your event in your local timezone automatically.
-
----
+<Aside type="tip">
+  Village stores your event in your local timezone automatically.
+</Aside>
 
 ## Slot count
 
@@ -108,10 +115,12 @@ Use drafts when you want to prepare an event before it goes live.
 
 ### Publish
 
-Clicking **Publish** makes your event live immediately. You'll get a shareable sign-up link and a brief confetti celebration.
+Clicking **Publish** makes your event live immediately and provides a shareable sign-up link.
 
-> **Tip:** You can also submit the form using the keyboard shortcut **⌘ + Enter** (Mac) or **Ctrl + Enter** (Windows/Linux).
-
+<Aside type="tip">
+  You can also submit the form using the keyboard shortcut **⌘ + Enter** (Mac)
+  or **Ctrl + Enter** (Windows/Linux).
+</Aside>
 ---
 
 ## Publishing a draft later
