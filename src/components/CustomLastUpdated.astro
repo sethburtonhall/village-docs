@@ -1,7 +1,4 @@
 ---
-import { Badge } from "@astrojs/starlight/components";
-import { ChevronRight } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 
@@ -25,8 +22,8 @@ const { lang = "en", lastUpdated } = Astro.locals.starlightRoute;
         }}
       />
       🎉 <hr class="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
-      <AnimatedGradientText>
-        <span>
+      <AnimatedGradientText client:load>
+        <span class="text-sm">
           Updated:{" "}
           {lastUpdated.toLocaleDateString(lang, {
             dateStyle: "medium",
