@@ -1,0 +1,145 @@
+---
+title: Email Notifications
+description: Understand the emails Village sends automatically and how attendee self-cancellation works.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+Village handles email notifications automatically — you don't need to configure anything to get started. When key events happen, Village sends the right email to the right person.
+
+---
+
+## Emails sent to attendees
+
+### 1. Sign-up confirmation
+
+**When it's sent:** Immediately after an attendee submits your sign-up form.
+
+**What it contains:**
+
+- Confirmation that their registration was received
+- A summary of event details
+- A link to the event's public page
+- A link to view their registration details or cancel their spot
+
+---
+
+### 2. Event update
+
+**When it's sent:** Whenever the title, short description, or date/time is changed on a published event with sign-ups.
+
+**What it contains:**
+
+- A notice that the event details have been updated
+- A summary of the updated event details
+- A link to the event's public page
+- A link to view their registration details or cancel their spot
+
+<Aside type="caution" title="Heads Up">
+  This email is triggered every time you save edits to the title, short
+  description, or date/time of the published event. If you need to make several
+  edits at once, make all your changes and save only once to send a single
+  notification instead of multiple emails.
+</Aside>
+
+---
+
+### 3. Event reminder
+
+**When it's sent:** 24 hours before the event date.
+
+**What it contains:**
+
+- A reminder that the event is approaching
+- A summary of event details
+- A link to the event's public page
+- A link to view their registration details or cancel their spot
+
+---
+
+### 4. Event cancellation
+
+**When it's sent:** When you cancel an event from the event editor.
+
+**What it contains:**
+
+- A notice that the event has been cancelled
+- A summary of the event details
+- A link to the event's public page
+
+---
+
+### 5. Attendee self-cancellation
+
+**When it's sent:** When an attendee cancels their spot.
+
+**What it contains:**
+
+- A notice that their spot has been cancelled
+- A summary of the event details
+- A link to sign up again if they choose
+
+<Aside>
+  Attendees are able to cancel their own spot, without needing to contact you
+  directly, using a link in their confirmation email.
+</Aside>
+
+When an attendee clicks the link:
+
+1. They're taken to a page to manage their signup
+2. The page shows the event details and a summary of their form responses
+3. They can click _**Cancel my spot**_ to remove themselves from the event
+
+When they cancel:
+
+- Their slot is immediately returned to the event's available count
+- If the event was previously full, the sign-up form reopens for new registrations
+- The cancellation is reflected in your sign-up table instantly
+- A confirmation email is sent to let them know their spot has been cancelled
+
+<Aside>
+  If an attendee tries to use a manage link that has already been cancelled, the
+  page shows a message indicating the signup was already removed.
+</Aside>
+
+---
+
+### 6. Admin cancellation
+
+**When it's sent:** When you cancel an attendee's spot from the sign-up table and choose to notify them.
+
+**What it contains:**
+
+- A notice that their spot has been cancelled
+- A summary of the event details
+- A link to the event's public page
+
+---
+
+## What you don't need to do
+
+Village handles all of this automatically:
+
+- You do **not** need to manually confirm sign-ups
+- You do **not** need to send confirmation emails yourself
+- You do **not** need to manage attendee cancellations — they can do it themselves via the manage link
+
+---
+
+## Frequently asked questions
+
+##### Can I customize the confirmation email?
+
+> No, and this is not currently on the development roadmap.
+
+##### What happens if an attendee doesn't receive their confirmation?
+
+> Ask them to check their spam folder. If they still can't find it, you can locate their sign-up in your event's sign-up table and share the event details with them directly.
+
+##### Can I send a custom message to all attendees?
+
+> No. If you would like this feature, please [let us know](/guides/feedback-support). For now, updating the event title, short description, or date/time will send an update notification to everyone who has signed up.
+
+##### Do attendees get notified when I remove them?
+
+> Yes, if you choose to notify them. When you remove a sign-up from your end, you have the option to send (or skip) a notification email, and optionally include a personal note explaining the removal. See [Managing Sign-Ups](/guides/managing-signups) for details.

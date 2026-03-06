@@ -10,9 +10,11 @@ import { passthroughImageService } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://docs.usevillage.app/",
   image: {
     service: passthroughImageService(),
   },
@@ -89,6 +91,7 @@ export default defineConfig({
       ],
     }),
     react(),
+    sitemap(),
   ],
   vite: {
     plugins: [tailwindcss()],

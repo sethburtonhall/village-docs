@@ -1,13 +1,17 @@
+/* 1. Define the Cascade Layers first */
 @layer base, starlight, theme, components, utilities;
 
+/* 2. Import Starlight-specific compatibility styles */
 @import "@astrojs/starlight-tailwind";
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities);
+/* 3. Import Tailwind v4 base */
+/* This automatically includes theme, preflight (base), and utilities */
+@import "tailwindcss" no-preflight;
 
-@import "tailwindcss";
+/* 4. Import Plugins & Third-party styles */
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* 5. Custom project overrides */
 @import "./custom.css";
 
 @custom-variant dark (&:is(.dark *));
@@ -75,11 +79,13 @@
       background-position: 200%;
     }
   }
-  --animate-gradient: gradient 8s linear infinite
-;
+  --animate-gradient: gradient 8s linear infinite;
   @keyframes gradient {
-  to {
-    background-position: var(--bg-size, 300%) 0;}}}
+    to {
+      background-position: var(--bg-size, 300%) 0;
+    }
+  }
+}
 
 :root {
   --radius: 0.625rem;
@@ -197,4 +203,8 @@
   --sl-color-gray-6: #eceef2;
   --sl-color-gray-7: #f5f6f8;
   --sl-color-black: #ffffff;
+}
+
+.img-sm {
+  width: 300px;
 }
