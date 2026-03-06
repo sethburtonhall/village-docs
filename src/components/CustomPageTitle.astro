@@ -1,0 +1,15 @@
+---
+const { title } = Astro.locals.starlightRoute.entry.data;
+const isHomepage = Astro.locals.starlightRoute.id === "";
+---
+
+<h1 id="_top" class="text-4xl leading-tight font-bold lg:text-6xl">
+  {title}
+  {
+    isHomepage && (
+      <>
+        <span class="text-3xl lg:text-5xl">🎉</span> Fun!
+      </>
+    )
+  }
+</h1>

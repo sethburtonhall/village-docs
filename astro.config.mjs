@@ -7,6 +7,9 @@ import starlightLinksValidator from "starlight-links-validator";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightHeadingBadges from "starlight-heading-badges";
 import { passthroughImageService } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,12 +25,14 @@ export default defineConfig({
         ...(process.env.CHECK_LINKS ? [starlightLinksValidator()] : []),
       ],
       // Disable the default 404 page so we can use our custom one
-      disable404Route: true,
+      // disable404Route: true,
       components: {
+        Hero: "./src/components/CustomHero.astro",
         LastUpdated: "./src/components/CustomLastUpdated.astro",
+        PageTitle: "./src/components/CustomPageTitle.astro",
       },
       customCss: [
-        "./src/styles/custom.css",
+        "./src/styles/global.css",
         "@fontsource/nunito/400.css",
         "@fontsource/nunito/600.css",
         "@fontsource/nunito/700.css",
@@ -83,5 +88,9 @@ export default defineConfig({
         },
       ],
     }),
+    react(),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

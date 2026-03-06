@@ -1,0 +1,134 @@
+---
+title: Publishing & Sharing
+description: How to publish your event and share it with attendees.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Badge } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
+import updateStatus from "../../../assets/screenshots/publish-sharing/update-status.png";
+
+Once your event is ready, publishing it makes it live on the internet with a unique sign-up link that anyone can use — no Village account required.
+
+---
+
+## Publishing your event
+
+There are two ways to publish an event:
+
+### From the event creation form
+
+At the bottom of the event creation form, click **Create Event**. Your event goes live immediately and you'll see a confirmation.
+
+## ![Draft Banner](../../../assets/screenshots/publish-sharing/event-creation.png)
+
+### From the event draft edit form
+
+At the bottom of the event draft edit form, click **Publish Event**. Your event goes live immediately and you'll see a confirmation.
+
+## ![Draft Banner](../../../assets/screenshots/publish-sharing/event-draft-edit.png)
+
+### From the draft banner
+
+If your event is saved as a draft, open it from your Events list and look for the yellow **draft banner** at the top of the page. Click **Publish Event** to make it live instantly — no need to go back into the edit form.
+
+## ![Draft Banner](../../../assets/screenshots/publish-sharing/draft-banner.png)
+
+## Your event's public link
+
+Every published event has a unique public URL:
+
+```
+https://app.usevillage.app/event-signup/[event-id]
+```
+
+You can find and copy this link in two ways:
+
+- open the **event actions menu** ⋯ menu on any event card or event detail page
+  - click **Copy Public Link**. The link is copied to your clipboard.
+  - click **View Public Link** to open the page in a new tab. Copy the url in address bar.
+
+---
+
+## What attendees see on the public page
+
+When someone opens your event's public link, they see:
+
+- Your event's **cover image** and **color theme**
+- The **event title** and **event type**
+- The **date and time** (with end time, if set)
+- The full **description** with all of your rich text formatting
+- The **number of remaining slots** (if the event has a slot limit)
+- Your **sign-up form**
+- Your **organization name and logo** <Badge text="Organization" variant="tip" />
+
+<Aside>
+  Attendees do not need a Village account to sign up. They simply fill out the
+  form and submit.
+</Aside>
+
+---
+
+## Slot availability
+
+The public page shows a live count of remaining slots. As people sign up, the count decreases in real time.
+
+When **all slots are filled**, the sign-up form is automatically replaced with an "event is full" message. No action is needed on your part.
+
+If someone cancels or you remove a participant, their slot is immediately returned and the form reopens for new sign-ups.
+
+---
+
+## Event status
+
+You can change your event's status at any time. Status options are:
+
+| Status                                         | What it means                                              |
+| ---------------------------------------------- | ---------------------------------------------------------- |
+| <Badge text="In Progress" variant="success" /> | Your event is active and accepting sign-ups                |
+| <Badge text="Canceled" variant="danger" />     | The event is canceled — the card is visually de-emphasized |
+
+Events that have passed their date are automatically displayed as <Badge text="Completed" /> in your dashboard with a grayed-out appearance. No action is required.
+
+To change the status, use the **Event Status** selector on the edit form or the **Event Status** badge on the event.
+
+<Image
+  src={updateStatus}
+  alt="Update Status Selector Badge"
+  width="500px"
+  data-zoom-off
+/>
+
+---
+
+## Editing a published event
+
+You can edit any event detail at any time after publishing — title, description, date, slot count, form fields, and more.
+
+<Aside type="tip" title="Important">
+
+When you save changes to a published event, Village automatically sends an **event update email** to all existing sign-ups. Make sure your changes are intentional before saving, as this will notify everyone who has already signed up. See [Email Notifications](/guides/email-notifications) for details on what that email contains.
+
+</Aside>
+
+## Duplicating an event
+
+To reuse an event as a starting point for a new one, open the ⋯ actions menu on any event card or event page and click **Duplicate**. Village creates an exact copy of the event — including the title, description, form, slot count, image, and theme — and opens it in the editor as a new draft for you to customize.
+
+This is useful for recurring events where most details stay the same each time.
+
+---
+
+## Deleting an event
+
+To permanently delete an event, open the ⋯ actions menu and click **Delete**. A confirmation dialog will appear before anything is removed. Deletion is permanent and cannot be undone.
+
+<Aside>
+
+Deleting an event does not automatically notify attendees. If you want to cancel a published event that has sign-ups, change its status to **Canceled** before deleting it, and participants will be notified by email.
+
+</Aside>
+
+## Marking as a Favorite
+
+Click the ⭐ **star icon** on any event card to favorite it. Favorited events appear in the **Favorite events** section at the top of your dashboard for quick access. Click the star again to unfavorite.

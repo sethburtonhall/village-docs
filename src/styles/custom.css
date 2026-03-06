@@ -18,7 +18,7 @@
   .hero > img,
   .hero > .hero-html {
     order: 2;
-    width: min(70%, 25rem);
+    width: min(100%, 25rem);
   }
 }
 
