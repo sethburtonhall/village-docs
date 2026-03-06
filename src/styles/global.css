@@ -3,9 +3,10 @@
 
 /* 2. Import Starlight-specific compatibility styles */
 @import "@astrojs/starlight-tailwind";
-/* 3. Import Tailwind v4 base */
-/* This automatically includes theme, preflight (base), and utilities */
-@import "tailwindcss" no-preflight;
+
+/* 3. Import Tailwind v4 theme + utilities (no preflight, so Starlight prose styles are preserved) */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 /* 4. Import Plugins & Third-party styles */
 @import "tw-animate-css";
