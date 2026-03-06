@@ -4,6 +4,7 @@ description: Welcome to Village — group sign-ups made simple and fun.
 ---
 
 import { Badge } from "@astrojs/starlight/components";
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 Village is a group event management tool built for communities, teams, nonprofits, schools, churches, and anyone who needs to organize people around shared activities. It lets you create events, build custom sign-up forms, share a public link, and manage attendees — all in one place.
 
@@ -33,9 +34,17 @@ A sign-up is a registration submitted by an attendee. Each sign-up contains the 
 
 Village has three plans, each with different features.
 
-- <Badge text="Free" variant="note" />
-- <Badge text="Individual" variant="success" />
-- <Badge text="Organization" variant="tip" />
+<CardGrid>
+  <Card title="Free" icon="information">
+    Great for testing and casual event organizers
+  </Card>
+  <Card title="Individual" icon="rocket">
+    Great for individuals and small teams.
+  </Card>
+  <Card title="Organization" icon="star">
+    Ideal for larger teams and organizations.
+  </Card>
+</CardGrid>
 
 See [Account & Plans](/start-here/account-plans) for the full comparison.
 

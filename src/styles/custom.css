@@ -11,6 +11,19 @@
   color: var(--sl-color-white);
 }
 
+.card:nth-child(4n + 1) {
+  --sl-card-border: var(--sl-color-blue);
+  --sl-card-bg: var(--sl-color-blue-low);
+}
+.card:nth-child(4n + 2) {
+  --sl-card-border: var(--sl-color-green);
+  --sl-card-bg: var(--sl-color-green-low);
+}
+.card:nth-child(4n + 3) {
+  --sl-card-border: var(--sl-color-purple);
+  --sl-card-bg: var(--sl-color-purple-low);
+}
+
 @media (min-width: 50rem) {
   .hero {
     grid-template-columns: 7fr 4fr;
@@ -19,6 +32,10 @@
   .hero > .hero-html {
     order: 2;
     width: min(100%, 25rem);
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 }
 
