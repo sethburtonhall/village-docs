@@ -1,0 +1,59 @@
+---
+import MobileMenuFooter from "virtual:starlight/components/MobileMenuFooter";
+import SidebarPersister from "@astrojs/starlight/components/SidebarPersister.astro";
+import SidebarSublist from "@astrojs/starlight/components/SidebarSublist.astro";
+import { ClipboardList, LogIn, Mail } from "lucide-react";
+const { sidebar } = Astro.locals.starlightRoute;
+---
+
+<SidebarPersister>
+  <SidebarSublist sublist={sidebar} />
+  <div class="sidebar-links mt-auto">
+    <div class="divider"></div>
+    <div class="flex items-center gap-2">
+      <ClipboardList size={16} />
+      <a href="https://usevillage.app" target="_blank" rel="noopener noreferrer"
+        >UseVillage.app</a
+      >
+    </div>
+    <div class="flex items-center gap-2">
+      <LogIn size={16} />
+      <a
+        href="https://app.usevillage.app"
+        target="_blank"
+        rel="noopener noreferrer">Login</a
+      >
+    </div>
+    <div class="flex items-center gap-2">
+      <Mail size={16} />
+      <a href="mailto:support@usevillage.app">Contact Us</a>
+    </div>
+  </div>
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+  <MobileMenuFooter />
+</div>
+
+<style>
+  @layer starlight.core {
+    .divider {
+      border-top: 1px solid var(--sl-color-hairline-light);
+      margin-bottom: 1rem;
+    }
+    .sidebar-links {
+      padding: 1rem var(--sl-sidebar-pad-x) 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-links a {
+      display: block;
+      font-size: var(--sl-text-sm);
+      text-decoration: none;
+      color: var(--sl-color-gray-3);
+    }
+    .sidebar-links a:hover {
+      color: var(--sl-color-white);
+    }
+  }
+</style>

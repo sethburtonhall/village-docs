@@ -32,6 +32,7 @@ export default defineConfig({
         Hero: "./src/components/CustomHero.astro",
         LastUpdated: "./src/components/CustomLastUpdated.astro",
         PageTitle: "./src/components/CustomPageTitle.astro",
+        Sidebar: "./src/components/CustomSidebar.astro",
       },
       customCss: [
         "./src/styles/global.css",
