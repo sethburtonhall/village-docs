@@ -4,6 +4,7 @@ description: View, manage, and export the sign-ups for your events.
 ---
 
 import { Aside } from "@astrojs/starlight/components";
+import { Badge } from "@astrojs/starlight/components";
 
 When attendees sign up for your event, their sign-ups appear in the sign-up table on your event's detail page. Village updates this table in real time — you don't need to refresh the page to see new registrations.
 
@@ -11,17 +12,17 @@ When attendees sign up for your event, their sign-ups appear in the sign-up tabl
 
 ## Viewing sign-ups
 
+```
+https://app.usevillage.app/events/[eventId]
+```
+
 To see sign-ups for a specific event:
 
 1. Go to **Events** in the sidebar
-2. Click on any event to open its detail page
+2. Click _**View Event**_ to open its detail page
 3. Scroll down to the **Sign-Ups** section
 
-The sign-up table displays one row per attendee. The columns are generated dynamically based on the fields in your sign-up form — each form field becomes its own column. Common fields like First Name, Last Name, and Email are sorted to appear first.
-
-Each row also shows:
-
-- **Signed Up** — the date and time the attendee signed up.
+The sign-up table displays one row per attendee. It displays the attendee's **name**, **email**, **date signed up**, and any **additional fields** you added to your sign-up form.
 
 If no one has signed up yet, the section shows an empty state with a message indicating sign-ups will appear here when people register.
 
@@ -29,7 +30,14 @@ If no one has signed up yet, the section shows an empty state with a message ind
 
 ## Real-time updates
 
-The sign-up table updates live as new registrations come in. If you're watching your event during a sign-up period (for example, at a live event check-in), you'll see new rows appear automatically without needing to refresh the page.
+Village updates your event data live — no page refresh needed. This applies to:
+
+- **Sign-up table** — new registrations appear as rows the moment someone submits the form
+- **Slot counter** — the available slot count on your event detail page decreases in real time as spots are taken (and increases when a sign-up is removed or cancelled)
+- **Public sign-up page** — attendees see the current available slot count live, so they always know if spots are still open
+- **Event Analytics** — the Recent sign-ups feed and Top events list on the dashboard also update automatically <Badge text="Organization" variant="tip" />
+
+This makes Village useful for active check-in scenarios — open your event on a tablet at the door and see arrivals as they register.
 
 ---
 
@@ -42,29 +50,33 @@ To remove an attendee from an event:
 3. Click the **remove icon** (person with a minus sign) at the end of their row
 4. A confirmation dialog appears
 
-In the dialog, you can:
+![Remove signup icon](./src/assets/screenshots/managing-signups/admin-remove.png)
+
+In the confirmation dialog, you can:
 
 - Choose whether to **notify the attendee by email** (checked by default)
-- Add an optional **personal note** to include in the notification email (e.g. "Sorry for the inconvenience — please reach out if you have questions.")
+- Add an optional **personal note** to include in the notification email (e.g. "Removed you from the event per our previous conversation — please reach out if you have questions.")
 
 Click **Remove** to confirm. The attendee's slot is immediately returned to the event's available count, and if you chose to notify them, they receive an email.
 
-> **Note:** The sign-up record is kept in your data for historical reference, but the attendee's slot is freed and they can no longer manage their registration via their confirmation email link.
+<Aside>
+  **Note:** The sign-up record is kept in your data for historical reference,
+  but the attendee's slot is freed and they can no longer manage their
+  registration via their confirmation email link.
+</Aside>
 
 ---
 
 ## Attendee self-cancellation
 
-Attendees can cancel their own spot without contacting you. Every sign-up confirmation email includes a **manage my signup** link. When an attendee clicks it, they're taken to a page where they can:
+Attendees can cancel their own spot without contacting you. Every sign-up confirmation email includes a link to manage their signup. When an attendee clicks it, they're taken to a page where they can:
 
 - Review the event details and their form responses
-- Click **Cancel my spot** to remove themselves from the event
+- Click _**Cancel my spot**_ to remove themselves from the event
 
-When they cancel, their slot is immediately returned to the event. You don't need to take any action. See [Email Notifications](/guides/email-notifications) for more details on the confirmation email.
+When they cancel, their slot is immediately returned to the event. You don't need to take any action. See [Email Notifications](/guides/email-notifications/#5-attendee-self-cancellation) for more details on the confirmation email.
 
----
-
-## Exporting sign-ups to CSV _(Organization plan only)_
+## Exporting sign-ups to CSV :badge[Organization]{variant="tip"}
 
 Organization plan users can download all sign-ups for an event as a CSV file.
 
@@ -72,15 +84,19 @@ Organization plan users can download all sign-ups for an event as a CSV file.
 2. Go to the **Sign-Ups** section
 3. Click the **Export CSV** button
 
-The downloaded file includes all form response columns plus the sign-up timestamp for each attendee. Open it in Excel, Google Sheets, or any spreadsheet application.
+<Aside>
+  The downloaded file includes all form response columns plus the sign-up
+  timestamp for each attendee. Open it in Excel, Google Sheets, or any
+  spreadsheet application.
+</Aside>
 
 ---
 
-## Dashboard sign-up activity _(Organization plan only)_
+## Event Analytics :badge[Organization]{variant="tip"}
 
 Organization plan users also see sign-up activity on their dashboard:
 
-- **Recent sign-ups** — a live-updating feed of the latest registrations across all of your events, with the attendee name (if collected), event title, and time
+- **Recent sign-ups** — a live-updating feed of the latest registrations across all of your events, with the attendee name, event title, and time
 - **Top events by sign-ups** — a ranked list of your events sorted by total sign-up count
 
 ---
@@ -88,5 +104,5 @@ Organization plan users also see sign-up activity on their dashboard:
 ## Tips for managing sign-ups
 
 - **Check in attendees manually** — the sign-up table can serve as a check-in list. Open the event on a tablet or laptop at the door and visually confirm attendees as they arrive.
-- **Use the search** — if your event has many sign-ups, use your browser's built-in search (⌘ + F on Mac, Ctrl + F on Windows) to quickly find a specific name.
+- **Use the search** — if your event has many sign-ups, use the table's built-in search to quickly filter for a specific name or email.
 - **Remove vs. cancel** — removing a sign-up from your side and an attendee self-cancelling have the same effect: the slot is freed. The difference is who initiates it.

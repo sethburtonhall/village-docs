@@ -24,6 +24,10 @@
   --sl-card-bg: var(--sl-color-purple-low);
 }
 
+.meta {
+  justify-content: flex-end;
+}
+
 @media (min-width: 50rem) {
   .hero {
     grid-template-columns: 7fr 4fr;
@@ -37,8 +41,4 @@
   .card-grid {
     grid-template-columns: 1fr;
   }
-}
-
-.meta {
-  justify-content: flex-end;
 }
