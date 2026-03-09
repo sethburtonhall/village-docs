@@ -80,7 +80,8 @@ When someone opens your event's public link, they see:
 - The **event title** and **event type**
 - The **date and time** (with end time, if set)
 - The full **description** with all of your rich text formatting
-- The **number of remaining slots** (if the event has a slot limit)
+- For **Standard** events: the **number of remaining slots** (if the event has a slot limit)
+- For **Appointment**, **Volunteer Shift**, and **Bring an Item** events: a **slot picker** showing each available slot as a card — attendees select one before filling out the form
 - Your **sign-up form**
 - Your **organization name and logo** <Badge text="Organization" variant="tip" />
 
@@ -93,11 +94,25 @@ When someone opens your event's public link, they see:
 
 ## Slot availability
 
+### Standard events
+
 The public page shows a live count of remaining slots. As people sign up, the count decreases in real time.
 
 When **all slots are filled**, the sign-up form is automatically replaced with an "event is full" message. No action is needed on your part.
 
 If someone cancels or you remove an attendee, their slot is immediately returned and the form reopens for new sign-ups.
+
+### Slot-based events (Appointment, Volunteer Shift, Bring an Item)
+
+Instead of a single slot count, attendees see a **slot picker** — a grid of cards, one per slot. Each card shows:
+
+- The slot label, date, and time (Appointment and Volunteer Shift)
+- The item name and quantity remaining (Bring an Item)
+- A live availability badge (e.g. **Available**, **2 left**, **Last spot**)
+
+Attendees click a card to select their slot before filling out the sign-up form. Full slots are grayed out and cannot be selected. If every slot is full, a message is shown and no new sign-ups can be submitted.
+
+As with standard events, availability updates in real time — no refresh needed.
 
 ---
 
