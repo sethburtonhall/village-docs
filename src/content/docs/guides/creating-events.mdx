@@ -12,18 +12,16 @@ To create a new event, click the **Create Event** button in the top navigation b
 
 ## Event type
 
-The first field is **Event Type**. This categorizes your event and helps attendees understand the context at a glance. Choose the type that best fits your event:
+The first field is **Event Type**. This determines the sign-up format for your event — it controls how slots are structured, what the sign-up flow looks like for attendees, and pre-populates your sign-up form with sensible default fields.
 
-| Type             | Best for                                            |
-| ---------------- | --------------------------------------------------- |
-| **Nonprofit**    | Fundraisers, community drives, charity events       |
-| **School**       | Class activities, parent meetings, school events    |
-| **Volunteer**    | Volunteer shifts, service days, work parties        |
-| **Team**         | Sports teams, leagues, team practices               |
-| **Church**       | Worship events, ministry gatherings, church outings |
-| **Neighborhood** | Block parties, HOA meetings, local meetups          |
-| **Office**       | Work events, team lunches, company gatherings       |
-| **Pot Luck**     | Shared meals, potluck dinners, covered-dish events  |
+| Type                | Best for                                               | Sign-up format                        |
+| ------------------- | ------------------------------------------------------ | ------------------------------------- |
+| **Standard**        | General events, meetings, gatherings                   | Global slot count, simple sign-up     |
+| **Appointment**     | One-on-one meetings, consultations, time-slot bookings | One person per specific date and time |
+| **Volunteer Shift** | Volunteer work parties, service days, staffed shifts   | Multiple people per date/time range   |
+| **Bring an Item**   | Potlucks, supply drives, contribution sign-ups         | Item label with optional quantity     |
+
+Selecting an event type also automatically configures the **Sign-up Format** section below and pre-fills the sign-up form with appropriate default fields. You can customize both at any time.
 
 ---
 
@@ -82,13 +80,50 @@ Select your event's **start date and time** using the date-time picker. You can 
   Village stores your event in your local timezone automatically.
 </Aside>
 
-## Slot count
+<Aside>
+  For **Appointment** and **Volunteer Shift** events, the date field is hidden — the event date is automatically set to the earliest slot you create in the Sign-up Format section below.
+</Aside>
 
-Set how many spots are available for your event. This is the maximum number of people who can sign up.
+## Sign-up format
 
-- When all slots are filled, the sign-up form closes automatically and shows an "event is full" message to any new visitors
-- Each time someone cancels or is removed, their slot is returned to the available count
-- Your plan determines the maximum number of slots you can set per event (see [Account & Plans](/start-here/account-plans))
+How sign-ups are structured depends on the event type you selected above.
+
+### Standard
+
+A simple global slot count. Set the maximum number of people who can sign up. When all slots are filled, the sign-up form closes automatically.
+
+- Each cancellation or removal returns that slot to the available count
+- Your plan determines the maximum number of slots per event (see [Account & Plans](/start-here/account-plans))
+
+### Appointment
+
+Build a list of specific date-and-time slots, each holding **one person**. Attendees choose from the available times when signing up.
+
+For each slot you can set:
+- **Date and time** — the specific appointment time
+- **Label** — optional label (e.g. "Morning session", "Dr. Smith")
+- **Capacity** — fixed at 1 per slot
+
+### Volunteer Shift
+
+Build a list of shifts, each with a date, start time, end time, and capacity. Multiple people can sign up for the same shift.
+
+For each shift you can set:
+- **Label** — the shift name (e.g. "Setup Crew", "Registration Table")
+- **Start and end time** — the shift window
+- **Capacity** — how many people can fill this shift
+
+### Bring an Item
+
+Build a list of items for attendees to claim. Each item has a label and a quantity.
+
+For each item you can set:
+- **Label** — what the item is (e.g. "Pasta salad", "Folding chairs")
+- **Capacity** — how many of this item are needed
+
+<Aside type="tip">
+  Use the **Add Slot** button to add as many slots, shifts, or items as you need. You can reorder, edit, or delete them at any time before or after publishing.
+</Aside>
 
 ---
 
