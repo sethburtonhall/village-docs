@@ -3,6 +3,7 @@ title: Getting Started
 description: Create your account, log in, and get familiar with the Village dashboard.
 ---
 
+import { Aside } from "@astrojs/starlight/components";
 import { Badge } from "@astrojs/starlight/components";
 
 ## Creating your account
@@ -11,17 +12,24 @@ Go to [app.usevillage.app](https://app.usevillage.app/register) and click **Sign
 
 If you already have an account, click **Log In** and enter your credentials.
 
-> **Note:** Village uses a secure third-party authentication system. Your password is never stored directly by Village.
+<Aside>
+  Village uses a secure third-party authentication system. Your password is
+  never stored directly by Village.
+</Aside>
 
 ### Beta users :badge[Beta]{variant="caution"}
 
-If you received a beta invitation, use the link in your invitation email to create your account. Your account will automatically be set up with full Beta plan access — no extra steps needed.
+<Aside type="tip" title="important">
+  If you received a beta invitation, use the link in your invitation email to
+  create your account. Your account will automatically be set up with full Beta
+  plan access — no extra steps needed.
+</Aside>
 
 ---
 
 ## The welcome tour
 
-The first time you log in, Village shows a **Welcome Tour** — a 5-step walkthrough that introduces the main features of the app. You can step through it at your own pace or skip it entirely.
+The first time you log in, Village shows a **Welcome Tour** — a walkthrough that introduces the main features of the app. You can step through it at your own pace or skip it entirely.
 
 You can replay the tour at any time by clicking the **Help** button in the top navigation and selecting **Take the Tour Again**.
 
@@ -46,7 +54,7 @@ Below your favorites is a list of your upcoming published events, ordered by dat
 - A _"View Event"_ button
 - An event actions _"..."_ elipsis button
 
-### Event Analytics :badge[Individual]{variant="note"}
+### Basic Analytics :badge[Individual]{variant="note"}
 
 Individual plan users and above see two additional widgets on their dashboard:
 
@@ -54,6 +62,14 @@ Individual plan users and above see two additional widgets on their dashboard:
 - **Top events by sign-ups** — a ranked list of your most popular events
 
 ---
+
+### Advanced Analytics :badge[Organization]{variant="tip"}
+
+Organization plan users see additional analytics widgets on their dashboard:
+
+- **Event Performance Overview** — a comprehensive view of all your events with key metrics like total sign-ups, average attendance, and revenue
+- **Revenue Trends** — a chart showing your event revenue over time
+- **Attendance Patterns** — insights into your event attendance trends
 
 ## Navigating the app
 
