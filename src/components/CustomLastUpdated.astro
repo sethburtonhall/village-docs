@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import { execSync } from "node:child_process";
 
-// Get the latest commit date from main branch
+// Get the latest commit date from current branch
 const gitDate = new Date(
-  execSync("git log -1 --format=%cd --date=iso main").toString().trim(),
+  execSync("git log -1 --format=%cd --date=iso").toString().trim(),
 );
 const { lang = "en" } = Astro.locals.starlightRoute;
 ---
