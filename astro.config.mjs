@@ -89,6 +89,14 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: "Village Live",
+          items: [
+            { label: "Overview", slug: "village-live/overview" },
+            { label: "Running Your Event", slug: "village-live/mission-control" },
+            { label: "Attendee Experience", slug: "village-live/attendee-experience" },
+          ],
+        },
       ],
     }),
     react(),

@@ -1,0 +1,94 @@
+---
+title: Attendee Experience
+description: What attendees see and can do on Village Live during and after an event.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Badge } from "@astrojs/starlight/components";
+
+Attendees don't need to download anything. Village Live runs entirely in their phone's browser — the same link they already have from signing up.
+
+---
+
+## Getting there
+
+When attendees sign up for a Village event, their confirmation email includes a link to their sign-up. That same link becomes the Village Live attendee screen when the organizer goes live.
+
+```
+live.usevillage.app/e/{eventId}
+```
+
+Before the event starts, the screen shows the event title and a holding state. The moment the organizer taps **Go Live**, the screen updates automatically — attendees don't need to refresh.
+
+<Aside type="tip">
+  Encourage attendees to open their link before the event so they're already connected when it starts.
+</Aside>
+
+---
+
+## During the event
+
+### Live Timeline
+
+The timeline card shows what's happening right now and where you are in the agenda. As the organizer advances through activities, every attendee's screen updates instantly — no refresh needed.
+
+- **Current activity** — displayed prominently at the top of the card
+- **Progress dots** — one dot per agenda item; the current step is highlighted in magenta
+- **Up next** — the next activity is shown in small text below the progress bar
+
+### Who's Here
+
+A live counter showing how many attendees have been checked in versus total signups (e.g. "24 of 40"). The count updates in real time as the organizer checks people in from Mission Control.
+
+The counter color changes as capacity fills:
+- Normal — white
+- 80%+ capacity — amber
+- At or over capacity — red
+
+### Crowd Meter
+
+React to the event with emoji reactions. Tap any of the three buttons to send a reaction — it animates across everyone's screen simultaneously, like a live burst of energy from the whole room.
+
+| Reaction | Button |
+|----------|--------|
+| Fire | 🔥 |
+| Clap | 👏 |
+| Heart | ❤️ |
+
+Each button shows the cumulative reaction count for the session.
+
+### Broadcast banner
+
+When the organizer sends a broadcast, a banner slides in from the top of the screen. It displays for 10 seconds and then dismisses automatically, or attendees can tap **×** to close it early.
+
+Broadcasts are commonly used for urgent updates, directions, or quick announcements mid-event.
+
+### Ask a Question <Badge text="Standard" variant="note" />
+
+On Standard events, attendees can submit questions that go directly to the organizer's Q&A Queue.
+
+1. Type a question in the text field (up to 200 characters)
+2. Press **Enter** or tap **Ask**
+
+Questions are anonymous — no name is attached. The organizer sees questions as they come in and can broadcast them to the room or mark them as answered.
+
+### Live Poll <Badge text="Standard" variant="note" />
+
+When the organizer launches a poll, it appears on the attendee screen automatically. Tap an option to cast your vote — you can only vote once per poll.
+
+After voting (or when the organizer closes voting), results appear as a bar chart showing the percentage and vote count for each option. The results update in real time as more people vote.
+
+---
+
+## After the event
+
+When the organizer ends the event, the live screen transitions to the **Pulse Report** — a summary of the session while the energy is still fresh.
+
+The Pulse Report shows:
+
+- **Checked in** — how many people attended and what percentage of signups showed up
+- **Event duration** — how long the event ran from Go Live to End
+- **Crowd energy** — total reactions and the top reaction emoji for the session
+- **Poll results** — final vote counts and percentages for any poll that ran during the event
+
+The Pulse Report stays up indefinitely — attendees can return to the link later and still see the summary.
