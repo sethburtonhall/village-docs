@@ -56,11 +56,6 @@ export default defineConfig({
               label: "Introduction",
               slug: "start-here/introduction",
             },
-            {
-              label: "Private Beta Program",
-              slug: "start-here/private-beta",
-              badge: { text: "Beta", variant: "caution" },
-            },
             { label: "Getting Started", slug: "start-here/getting-started" },
             { label: "Your Account & Plan", slug: "start-here/account-plans" },
           ],
@@ -93,8 +88,14 @@ export default defineConfig({
           label: "Village Live",
           items: [
             { label: "Overview", slug: "village-live/overview" },
-            { label: "Running Your Event", slug: "village-live/mission-control" },
-            { label: "Attendee Experience", slug: "village-live/attendee-experience" },
+            {
+              label: "Running Your Event",
+              slug: "village-live/mission-control",
+            },
+            {
+              label: "Attendee Experience",
+              slug: "village-live/attendee-experience",
+            },
           ],
         },
       ],
