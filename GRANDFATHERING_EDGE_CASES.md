@@ -9,7 +9,9 @@
 ### 1. Remove and Re-invite
 **Scenario:** Admin invites Alice during early access (grandfathered). Later removes her. After pricing launches, tries to re-invite her, but they're at max member seats.
 
-**Decision:** Feature gate enforces seat limit. If at max seats, cannot re-add. They must remove another member first or upgrade plan.
+**Decision:** Feature gate enforces seat limit. If at max seats, cannot re-add. They must:
+- **If on Individual+:** Free a seat by removing another member
+- **If on Free:** Upgrade plan to add new seats
 
 **Implementation:** Seat availability check happens at invite-time. If current non-grandfathered members >= plan.max_seats, reject invite with message about seat limit.
 
