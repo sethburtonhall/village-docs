@@ -79,6 +79,14 @@ export default defineConfig({
               slug: "guides/email-notifications",
             },
             {
+              label: "Team Management",
+              slug: "guides/team-management",
+            },
+            {
+              label: "Analytics & Insights",
+              slug: "guides/analytics-and-insights",
+            },
+            {
               label: "Feedback & Support",
               slug: "guides/feedback-support",
             },
