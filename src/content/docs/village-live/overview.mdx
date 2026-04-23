@@ -1,0 +1,73 @@
+---
+title: Village Live
+description: Turn your Village event into a real-time live experience for attendees.
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Aside } from "@astrojs/starlight/components";
+
+Village handles sign-ups. Village Live handles the event itself.
+
+When your event starts, Village Live transforms the same attendee link into a live dashboard — showing what's happening right now, collecting reactions, running polls, and broadcasting updates to everyone's screen at once. No app download required.
+
+---
+
+## How it works
+
+The workflow is seamless for attendees:
+
+1. **Before the event** — attendees sign up on Village as usual and receive a confirmation email with their link
+2. **When the event starts** — you press **Go Live** in Mission Control; the same link now shows a live event screen
+3. **During the event** — attendees see the live timeline, react, ask questions, and vote on polls in real time
+4. **After the event** — the screen automatically shows a **Pulse Report** with attendance and crowd energy stats
+
+Nothing changes for attendees. The link they already have just comes alive.
+
+---
+
+## The two sides of Village Live
+
+<CardGrid>
+  <Card title="Mission Control" icon="setting">
+    Your organizer dashboard. Go live, step through activities, check in attendees, broadcast messages, run polls, and end the event. Accessible only to you and your organization members.
+  </Card>
+  <Card title="Attendee View" icon="open-book">
+    What attendees see on their phones. Live timeline, crowd reactions, Q&A, polls, and real-time broadcast banners — all updating instantly as you drive the event.
+  </Card>
+</CardGrid>
+
+---
+
+## Accessing Village Live
+
+Every published Village event automatically gets a Village Live link. You don't need to enable anything.
+
+| Link | Who it's for |
+|------|-------------|
+| `live.usevillage.app/e/{eventId}` | Attendees — this is the link in their confirmation email |
+| `live.usevillage.app/e/{eventId}/manage` | Organizers — Mission Control |
+
+<Aside>
+  The attendee link is the same link attendees already have from their Village sign-up confirmation email. You don't need to send a separate link.
+</Aside>
+
+---
+
+## Feature availability by event type
+
+Some features are available for all event types; others are specific to **Standard** events.
+
+| Feature | Standard | Appointment | Volunteer Shift | Bring an Item |
+|---------|:--------:|:-----------:|:---------------:|:-------------:|
+| Live Timeline | ✓ | ✓ | ✓ | ✓ |
+| Who's Here counter | ✓ | ✓ | ✓ | ✓ |
+| Crowd Meter (reactions) | ✓ | ✓ | ✓ | ✓ |
+| Broadcasts | ✓ | ✓ | ✓ | ✓ |
+| Pulse Report | ✓ | ✓ | ✓ | ✓ |
+| Speaker Timer | ✓ | — | — | — |
+| Q&A | ✓ | — | — | — |
+| Live Poll | ✓ | — | — | — |
+
+---
+
+**Ready to run your first live event?** See [Running Your Event](/village-live/mission-control) for a full walkthrough of Mission Control.

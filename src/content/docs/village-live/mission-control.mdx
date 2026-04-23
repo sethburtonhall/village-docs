@@ -1,0 +1,154 @@
+---
+title: Running Your Event
+description: A complete guide to Mission Control — the organizer dashboard for Village Live.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Badge } from "@astrojs/starlight/components";
+
+Mission Control is your organizer dashboard for running a live event. Everything you need — going live, checking in attendees, sending updates, running polls — is in one place on your phone or laptop.
+
+---
+
+## Accessing Mission Control
+
+Open the action menu (the **⋯** icon) on any event in Village and tap **Go Live**. Mission Control opens in a new tab.
+
+**Who can access Mission Control:**
+- The event creator
+- Any member of your Village organization (Organization plan)
+
+You'll be prompted to sign in with your Village account if you aren't already.
+
+<Aside>
+  Bookmark the Mission Control link on your phone before the event so you can access it quickly when you need it.
+</Aside>
+
+### Sharing the attendee link
+
+To share the live link with your attendees, open the event action menu and tap **Copy Live Link**. This copies the attendee URL directly to your clipboard so you can paste it anywhere — a reminder email, a group chat, or a QR code generator.
+
+Attendees who signed up through Village already have this link in their confirmation email, so you typically only need to share it separately if you want to reach people who haven't signed up yet.
+
+---
+
+## Before going live
+
+### Setting up activities
+
+Before you go live, add your agenda to the **Activities** section. Each line becomes one step in the live timeline that attendees see on their screens.
+
+```
+Welcome & introductions
+Main presentation
+Q&A
+Networking
+```
+
+Click **Save Activities** to save. You can update activities at any time, even mid-event.
+
+<Aside type="tip">
+  Keep activity names short — they display as a single line on attendee screens. Aim for 3–6 words per item.
+</Aside>
+
+---
+
+## Going live
+
+When you're ready to start, tap **Go Live**. This instantly:
+
+- Changes the attendee screen from a pre-event holding state to the live dashboard
+- Starts the activity timeline on the first item
+- Begins the real-time connection between your Mission Control and all attendee screens
+
+The **LIVE** indicator appears in your header when the event is active. Attendees see it too.
+
+---
+
+## During the event
+
+### Activity stepper
+
+Step through your agenda as the event progresses. The activity card shows the current step and your position in the agenda (e.g. "Activity — 2 of 5").
+
+- **Prev / Next** — move between activities; every attendee's screen updates immediately
+- The live timeline on attendee screens shows the current activity highlighted and progress dots for completed steps
+
+### Speaker Timer <Badge text="Standard" variant="note" />
+
+A simple count-up timer to help keep speakers on track. It runs locally in your browser — it's not visible to attendees.
+
+- **Play / Pause** — start and stop the timer
+- **Reset** — return to 00:00
+
+### Check-ins
+
+The check-in section shows your real-time attendance count pulled from Village signups. Tap **Attendees** to expand the full list and check people in individually as they arrive.
+
+- Tap the circle next to an attendee's name to mark them as checked in (turns green)
+- Tap again to uncheck if needed
+- The count updates live on attendee screens in the **Who's Here** section
+
+### Broadcasts
+
+Send an instant message to every attendee screen at once. The message appears as a banner across the top of their screen and auto-dismisses after 10 seconds (or they can dismiss it manually).
+
+Type your message and tap **Send**. Common uses:
+
+- "Parking validation available at the front desk"
+- "We're starting in 5 minutes — find a seat"
+- "Pizza has arrived in the lobby!"
+
+To clear an active broadcast before it expires, open **Settings → Clear Broadcast**.
+
+### Q&A Queue <Badge text="Standard" variant="note" />
+
+Attendees can submit questions from their screen. Questions appear in your Q&A Queue as they come in.
+
+For each question you can:
+
+- **Broadcast** (radio icon) — push the question text as a broadcast banner so the whole room sees what's being asked
+- **Mark answered** (check icon) — grays out the question so you know it's been addressed
+- **Remove** (× icon) — delete the question from the queue
+
+The badge on the Q&A Queue card shows the count of open (unanswered) questions.
+
+### Live Poll <Badge text="Standard" variant="note" />
+
+Launch a real-time poll that attendees can vote on from their screens.
+
+**To create a poll:**
+1. Tap **+ Create Poll**
+2. Enter a question and at least two options (up to four)
+3. Tap **Launch Poll** — the poll appears on all attendee screens immediately
+
+**While the poll is running:**
+- Vote counts update in real time in your Mission Control
+- Use **Close Voting** to stop accepting votes
+- Use **Show Results** to display the results on attendee screens
+- Use **Clear** to remove the poll entirely
+
+You can only have one active poll at a time.
+
+---
+
+## Settings
+
+Tap the **settings icon** (⚙) in the header to access:
+
+- **Copy Attendee Link** — the link to share with attendees
+- **Copy Manage Link** — your Mission Control link
+- **Clear Broadcast** — dismiss the current broadcast banner (if one is active)
+- **Go Live Again** — reactivate the event after ending it
+- **End Event** — ends the live session; attendees see the Pulse Report
+
+---
+
+## Ending the event
+
+Tap **Settings → End Event** and confirm. This:
+
+- Changes all attendee screens to the **Pulse Report** (attendance count, event duration, crowd reactions, poll results)
+- Keeps your Mission Control accessible so you can review the same summary
+
+If you ended the event early or want to extend it, tap **Go Live Again** from the settings menu or from the ended state card.
